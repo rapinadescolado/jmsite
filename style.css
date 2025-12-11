@@ -356,6 +356,10 @@ footer #footer-text p {
     font-size: 28px;
     letter-spacing: 0.2vw;
 }
+footer #footer-text img {
+    height: 15vh;
+    aspect-ratio: 1 / 1;
+}
 footer #contato {
     position: absolute;
     left: 0;
