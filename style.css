@@ -313,12 +313,52 @@ main section p {
 
 footer {
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100vw;
     height: 83vh;
+    padding: 5vh;
+    padding-bottom: 30vh;
     border-top: white 0.5vh solid;
+}
+footer iframe {
+    height: 48vh;
+    width: 40vw;
+}
+footer #footer-text {
+    width: 50vw;
+    height: 48vh;
+    color: white;
+}
+footer #footer-text h2 {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+}
+#footer-text h2::before, #footer-text h2::after {
+    content: "";
+    position: absolute;
+    top: 55%;
+    left: 0%;
+    display: block;
+    width: 20%;
+    height: 2px;
+    background-color: white;
+}
+#footer-text h2::after {
+    left: auto;
+    right: 0%;
+}
+footer #footer-text p {
+    margin: 3vh 0;
+    text-align: justify;
+    font-size: 28px;
+    letter-spacing: 0.2vw;
 }
 footer #contato {
     position: absolute;
+    left: 0;
     bottom: 0;
     display: flex;
     justify-content: space-evenly;
